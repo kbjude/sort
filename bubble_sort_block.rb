@@ -1,17 +1,16 @@
-
-def bubble_sort(array)
-    n = array.length
-    loop do
-        swampped = false
-        (n-1).times do |i|
-            if array[i] > array[i+1]
-                array[i], array[i+1] = array[i+1], array[i]
-                swampped = true
-            end
+def bubble_sort_by(array)
+    n = array.length - 1
+    n.times do
+      array.each_with_index do |i, x|
+        next_item = array[x + 1]
+        next if x == n
+        block_given?
+        col = yield(i, next_item)
+        if col.positive?
+          arr[x] = next_item
+          arr[x + 1] = i
         end
-        break if not swampped
+      end
     end
-    yield
-end
-
-array = [2,1,3,5,2,6]
+    arr
+  end
