@@ -7,8 +7,8 @@ def bubble_sort_by(array)
         block_given?
         col = yield(i, next_item)
         if col.positive?
-          arr[x] = next_item
-          arr[x + 1] = i
+          array[x] = next_item
+          array[x + 1] = i
         end
       end
     end
