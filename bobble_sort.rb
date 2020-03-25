@@ -1,16 +1,16 @@
 def bobble_sort(array)
-  counter = array.length - 1
+  count = array.length
   loop do
-    new_counter = 0
-    counter.times do |i|
+    new_count = 0
+    (1...count).each do |i|
       if array[i - 1] > array[i]
         array[i - 1], array[i] = array[i], array[i - 1]
-        new_counter = i
+        new_count = i
       end
     end
 
-    counter = new_counter
-    break if counter <= 1
+    count = new_count
+    break if count <= 1
   end
   array
 end
