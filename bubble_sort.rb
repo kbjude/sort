@@ -1,4 +1,4 @@
-def bobble_sort(array)
+def bubble_sort(array)
   count = array.length
   loop do
     new_count = 0
@@ -15,4 +15,4 @@ def bobble_sort(array)
   array
 end
 
-print bobble_sort([4, 9, 6, 5, 3, 10, 11, 1, 2])
+print bubble_sort([4, 9, 6, 5, 3, 10, 11, 1, 2])
