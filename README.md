@@ -10,11 +10,6 @@ The bobble sort is an algorithm that takes two elements, make a comparison betwe
 
 - Ruby
 
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
-
 ### Prerequisites
 
 In order to run this file on your computer, you need to install Ruby.
